@@ -1,0 +1,37 @@
+[
+  {
+    "title": "portfolio",
+    "dates": "September 2023",
+    "type": "project",
+    "description": "A portfolio website built in svelte with a go backend. (This website)",
+    "technologies": [
+      "svelte",
+      "html",
+      "css",
+      "javascript",
+      "go",
+      "docker"
+    ],
+    "technologiesIcons": [
+     "logos:svelte-icon", "vscode-icons:file-type-html","vscode-icons:file-type-css","logos:javascript","devicon:go","logos:docker-icon"
+    ],
+    "link": ""
+  },
+  {
+    "title": "pocketbase-kotlin",
+    "dates": "August 2023",
+    "type": "project",
+    "description": "A multiplatform Kotlin SDK for Pocketbase.",
+    "technologies": [
+      "kotlin",
+      "ktor",
+      "gradle"
+    ],
+    "technologiesIcons": [
+      "devicon:kotlin",
+      "devicon:ktor",
+      "vscode-icons:file-type-gradle"
+    ],
+    "link": "https://github.com/agrevster/pocketbase-kotlin"
+  }
+]
