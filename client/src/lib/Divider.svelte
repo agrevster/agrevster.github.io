@@ -1,4 +1,4 @@
-<div class="divider"></div>
+<div class = "divider"></div>
 
 <style>
     .divider{

@@ -1,21 +1,22 @@
-<script lang="ts">
-    import portrait from './assets/portrait.png'
-    import viteLogo from '/vite.svg'
-    import Counter from './lib/Counter.svelte'
+<script>
+    import portrait from "./assets/portrait.png"
     import Divider from "./lib/Divider.svelte";
+    import About from "./lib/about me/About.svelte";
 </script>
 
 <main>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/30df65de2e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;400;800&display=swap" rel="stylesheet">
-    <div class="card">
-        <img id="portrait" src="{portrait}" alt="" title="An AI generated lighthouse picture">
-        <p id="nametag">Hello, I'm Alex
+    <div class = "card">
+        <img id = "portrait" class = "no-select" src = "{portrait}" alt="" title="An AI generated lighthouse picture">
+        <p id = "nametag" >Hello, I'm Alex
             <br>
-            <span id="description">[Developer and barbeque enthusiast]</span>
+            <span id = "description">[Developer and barbeque enthusiast]</span>
         </p>
         <Divider/>
+        <About/>
     </div>
 </main>
 

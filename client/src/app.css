@@ -4,6 +4,7 @@
   --morning_sea:#A8DADC;
   --deep_ocean:#457B9D;
   --stormy_night: #0e1b2a;
+  --sail_blue: #1d3557;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -21,9 +22,8 @@
 }
 
 a {
-  font-weight: 500;
-  color: var(--deep_ocean);
-  text-decoration: inherit;
+  all: unset;
+  text-decoration: underline;
 }
 a:hover {
   color: var(--morning_sea);
@@ -55,4 +55,14 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+.no-select{
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.error{
+  background-color: black;
+  color: red;
+  text-decoration: underline;
 }
