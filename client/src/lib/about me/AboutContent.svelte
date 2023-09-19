@@ -1,6 +1,8 @@
 <script lang="js">
-    import AboutExperience from "./AboutExperience.svelte";
+    import AboutExperience from "./Experience/AboutExperience.svelte";
     import {onMount} from "svelte";
+    import AboutSkill from "./Skills/AboutSkill.svelte";
+    import SkillCategory from "./Skills/SkillCategory.svelte";
 
     export let tab
 
@@ -9,30 +11,41 @@
     }
 
     async function getProjects() {
-		const res = await fetch("http://localhost:8080/projects");
-		const text = await res.json();
+        const res = await fetch("http://localhost:8080/projects");
+        const text = await res.json();
 
-		if (res.ok) {
-			return text;
-		} else {
-			throw new Error(text);
-		}
-	}
+        if (res.ok) {
+            return text;
+        } else {
+            throw new Error(text);
+        }
+    }
+
+    async function getSkills() {
+        const res = await fetch("http://localhost:8080/skills");
+        const text = await res.json();
+
+        if (res.ok) {
+            return text;
+        } else {
+            throw new Error(text);
+        }
+    }
 
     let projectsPromise = getProjects();
-
+    let skillsPromise = getSkills()
 </script>
 
-<div class = "about-content">
+<div class="about-content">
     {#if tab === "about"}
-        <p>I am a college freshmen at the University of <b on:click = {redirectToUniSite} role = "button" tabindex = {0}
-                                                           on:keydown = {null}><span
-                class = "uni-purple bold"> Northern</span> <span class = "uni-gold bold">Iowa</span></b> who enjoys
+        <p>I am a college freshmen at the University of <b on:click={redirectToUniSite} role="button" tabindex={0}
+                                                           on:keydown={null}><span
+                class="uni-purple bold"> Northern</span> <span class="uni-gold bold">Iowa</span></b> who enjoys
             solving computer problems and developing software.</p>
     {/if}
 
     {#if tab === "experience"}
-        <div class = "experience">
+        <div>
             {#await projectsPromise}
                 <p>Loading...</p>
             {:then projects}
@@ -42,6 +55,19 @@
                 {/each}
             {:catch err}
                 <p class="error">ERROR: {err}</p>
+            {/await}
+        </div>
+    {/if}
+    {#if tab === "skills"}
+        <div class="about-skills">
+            {#await skillsPromise}
+               <p>Loading...</p>
+            {:then categories}
+               {#each categories as category}
+                   <SkillCategory data="{category}"/>
+               {/each}
+            {:catch err}
+               <p class="error">ERROR: {err}</p>
             {/await}
         </div>
     {/if}
@@ -67,5 +93,10 @@
 
     b {
         cursor: pointer;
+    }
+
+    .about-skills {
+        background: var(--sail_blue);
+        border-radius: .4em;
     }
 </style>

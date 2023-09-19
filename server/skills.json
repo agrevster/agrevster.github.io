@@ -1,0 +1,76 @@
+[
+  {
+    "title": "jvm",
+    "icon": "logos:java",
+    "skills": [
+      {
+        "title": "Kotlin",
+        "icon": "devicon:kotlin",
+        "level": 3
+      },
+      {
+        "title": "Java",
+        "icon": "devicon:java",
+        "level": 3
+      },
+      {
+        "title": "Gradle",
+        "icon": "vscode-icons:file-type-gradle",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "title": "web",
+    "icon": "mdi:web",
+    "skills": [
+      {
+        "title": "HTML",
+        "icon": "vscode-icons:file-type-html",
+        "level": 2
+      },
+      {
+        "title": "CSS",
+        "icon": "vscode-icons:file-type-css",
+        "level": 2
+      },
+      {
+        "title": "Svelte",
+        "icon": "logos:svelte-icon",
+        "level": 2
+      },
+      {
+        "title": "Javascript",
+        "icon": "logos:javascript",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "title": "python",
+    "icon": "devicon:python",
+    "skills": [
+      {
+        "title": "Python",
+        "icon": "logos:python",
+        "level": 3
+      },
+      {
+        "title": "Flask",
+        "icon": "bxl:flask",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "title": "MISC",
+    "icon": "ph:code-fill",
+    "skills": [
+      {
+        "title": "Docker",
+        "icon": "logos:docker-icon",
+        "level": 1
+      }
+    ]
+  }
+]
