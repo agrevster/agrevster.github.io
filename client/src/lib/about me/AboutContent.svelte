@@ -1,7 +1,5 @@
 <script lang="js">
     import AboutExperience from "./Experience/AboutExperience.svelte";
-    import {onMount} from "svelte";
-    import AboutSkill from "./Skills/AboutSkill.svelte";
     import SkillCategory from "./Skills/SkillCategory.svelte";
 
     export let tab
