@@ -9,7 +9,7 @@
     }
 
     async function getProjects() {
-        const res = await fetch("http://localhost:8080/projects");
+        const res = await fetch("/projects.json");
         const text = await res.json();
 
         if (res.ok) {
@@ -20,7 +20,7 @@
     }
 
     async function getSkills() {
-        const res = await fetch("http://localhost:8080/skills");
+        const res = await fetch("/skills.json");
         const text = await res.json();
 
         if (res.ok) {
@@ -59,13 +59,13 @@
     {#if tab === "skills"}
         <div class="about-skills">
             {#await skillsPromise}
-               <p>Loading...</p>
+                <p>Loading...</p>
             {:then categories}
-               {#each categories as category}
-                   <SkillCategory data="{category}"/>
-               {/each}
+                {#each categories as category}
+                    <SkillCategory data="{category}"/>
+                {/each}
             {:catch err}
-               <p class="error">ERROR: {err}</p>
+                <p class="error">ERROR: {err}</p>
             {/await}
         </div>
     {/if}

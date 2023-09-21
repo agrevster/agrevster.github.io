@@ -17,6 +17,11 @@
         "title": "Gradle",
         "icon": "vscode-icons:file-type-gradle",
         "level": 2
+      },
+      {
+        "title": "Maven",
+        "icon": "devicon:maven",
+        "level": 2
       }
     ]
   },
@@ -42,6 +47,11 @@
       {
         "title": "Javascript",
         "icon": "logos:javascript",
+        "level": 2
+      },
+      {
+        "title": "Go",
+        "icon": "devicon:go",
         "level": 2
       }
     ]
@@ -70,6 +80,11 @@
         "title": "Docker",
         "icon": "logos:docker-icon",
         "level": 1
+      },
+      {
+        "title": "Vim",
+        "icon": "logos:vim",
+        "level": 2
       }
     ]
   }
