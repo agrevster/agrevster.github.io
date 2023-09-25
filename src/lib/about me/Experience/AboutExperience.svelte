@@ -1,6 +1,7 @@
 <script lang="js">
     import Icon from '@iconify/svelte';
     import AboutExperienceType from "./AboutExperienceType.svelte";
+
     export let data
 
     let dates = data.dates
@@ -13,18 +14,22 @@
     let link = data.link
 </script>
 
-<div class="about-experience">
-    <p class="experience-title"><a href="{link}" target="_blank">{title}</a><br><AboutExperienceType experienceType="{type}"/> <br><span class="experience-description"> {description}</span></p>
+<div class = "about-experience">
+    <p class = "experience-title"><a href="{link}" target="_blank">{title}</a><br>
+        <AboutExperienceType experienceType="{type}"/>
+        <br><span class = "experience-description"> {description}</span></p>
     <div class="flex">
         <div class="vertical-flex">
             <p class="experience-dates">{dates}</p>
         </div>
-         {#each technologies as technology, i}
+        {#each technologies as technology, i}
             <div class="technologies no-select">
-                <div title="{technology}" class="technologies-icon"><Icon icon={technologiesIcons[i]}/></div>
+                <div title="{technology}" class="technologies-icon">
+                    <Icon icon={technologiesIcons[i]}/>
+                </div>
                 <p class="technologies-label">{technology}</p>
             </div>
-        {/each }
+        {/each}
 
     </div>
 </div>
@@ -35,7 +40,8 @@
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-    .vertical-flex{
+
+    .vertical-flex {
         display: flex;
         flex-direction: column;
     }
@@ -55,6 +61,7 @@
         font-family: Inter, sans-serif;
         font-size: .8em;
     }
+
     .experience-dates {
         font-size: .6em;
     }
@@ -66,10 +73,12 @@
         flex-direction: column;
         align-items: center;
     }
-    .technologies-label{
+
+    .technologies-label {
         margin-left: .5em;
         font-size: 0.6em;
     }
+
     .technologies-icon {
         transform: scale(1.5);
     }

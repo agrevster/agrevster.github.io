@@ -52,7 +52,7 @@
                     <br>
                 {/each}
             {:catch err}
-                <p class="error">ERROR: {err}</p>
+                <p class = "error">ERROR: {err}</p>
             {/await}
         </div>
     {/if}
@@ -65,7 +65,7 @@
                     <SkillCategory data="{category}"/>
                 {/each}
             {:catch err}
-                <p class="error">ERROR: {err}</p>
+                <p class = "error">ERROR: {err}</p>
             {/await}
         </div>
     {/if}

@@ -9,10 +9,10 @@
       "html",
       "css",
       "javascript",
-      "docker"
+      "github-actions"
     ],
     "technologiesIcons": [
-     "logos:svelte-icon", "vscode-icons:file-type-html","vscode-icons:file-type-css","logos:javascript","devicon:go","logos:docker-icon"
+     "logos:svelte-icon", "vscode-icons:file-type-html","vscode-icons:file-type-css","logos:javascript","skill-icons:githubactions-dark"
     ],
     "link": ""
   },
@@ -24,12 +24,14 @@
     "technologies": [
       "kotlin",
       "ktor",
-      "gradle"
+      "gradle",
+      "github-actions"
     ],
     "technologiesIcons": [
       "devicon:kotlin",
       "devicon:ktor",
-      "vscode-icons:file-type-gradle"
+      "vscode-icons:file-type-gradle",
+      "skill-icons:githubactions-dark"
     ],
     "link": "https://github.com/agrevster/pocketbase-kotlin"
   }

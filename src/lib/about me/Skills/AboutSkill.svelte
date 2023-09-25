@@ -9,16 +9,16 @@
     let level = data.level
 </script>
 
-<div class="skill-container">
-    <div class="skill-icon no-select">
+<div class = "skill-container">
+    <div class = "skill-icon no-select">
         <Icon icon="{icon}"/>
     </div>
-    <p class="skill-title">{title}</p>
-    <p class="skill-dash no-select">-</p>
+    <p class = "skill-title">{title}</p>
+    <p class = "skill-dash no-select">-</p>
     <SkillStars stars={level}/>
 </div>
 <style>
-    .skill-container{
+    .skill-container {
         display: flex;
 
         flex-direction: row;
