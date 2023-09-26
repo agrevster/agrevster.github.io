@@ -73,6 +73,22 @@
     ]
   },
   {
+    "title": "Apple",
+    "icon": "mingcute:apple-line",
+    "skills": [
+      {
+        "title": "Swift",
+        "icon": "devicon:swift",
+        "level": 1
+      },
+      {
+        "title": "Swift UI",
+        "icon": "iconoir:apple-swift",
+        "level": 2
+      }
+    ]
+  },
+  {
     "title": "MISC",
     "icon": "ph:code-fill",
     "skills": [
@@ -84,6 +100,11 @@
       {
         "title": "Vim",
         "icon": "logos:vim",
+        "level": 2
+      },
+      {
+        "title": "SQL",
+        "icon": "logos:mysql",
         "level": 2
       }
     ]

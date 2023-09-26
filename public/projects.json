@@ -12,7 +12,11 @@
       "github-actions"
     ],
     "technologiesIcons": [
-     "logos:svelte-icon", "vscode-icons:file-type-html","vscode-icons:file-type-css","logos:javascript","skill-icons:githubactions-dark"
+      "logos:svelte-icon",
+      "vscode-icons:file-type-html",
+      "vscode-icons:file-type-css",
+      "logos:javascript",
+      "skill-icons:githubactions-dark"
     ],
     "link": ""
   },
@@ -34,5 +38,24 @@
       "skill-icons:githubactions-dark"
     ],
     "link": "https://github.com/agrevster/pocketbase-kotlin"
+  },
+  {
+    "title": "Timekeeper",
+    "dates": "May 2023",
+    "type": "job",
+    "description": "A employee timecard program for Mac and ipad. Written in Swift with a Kotlin backend.",
+    "technologies": [
+      "kotlin",
+      "swift",
+      "gradle",
+      "sqlite"
+    ],
+    "technologiesIcons": [
+      "devicon:kotlin",
+      "logos:swift",
+      "vscode-icons:file-type-gradle",
+      "simple-icons:sqlite"
+    ],
+    "link": "https://clargold.org/en-US/technology-f202db6f"
   }
 ]
