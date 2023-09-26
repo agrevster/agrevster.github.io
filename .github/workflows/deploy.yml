@@ -24,20 +24,9 @@ jobs:
       - name: Setup Node dependencies
         run: npm i
 
-      - name: Build Svelte
-        run: npm run build
-
-      - name: Find and Replace
-        uses: jacobtomlinson/gha-find-replace@v3
-        with:
-          include: "**index.html"
-          find: "/assets"
-          replace: "/portfolio/assets"
-          regex: false
-
-
-      - name: Deploy to Github Pages
+      - name: Deploy GitHub Pages
         run: |
+          npm run build 
           git worktree add gh-pages
           git config user.name "Deploy from CI"
           git config user.email ""
