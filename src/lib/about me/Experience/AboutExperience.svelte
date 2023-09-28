@@ -82,4 +82,18 @@
     .technologies-icon {
         transform: scale(1.5);
     }
+
+    @media (max-width: 500px) {
+        .experience-title {
+            font-size: 2vw;
+        }
+
+        .technologies-label {
+            font-size: 1vw;
+        }
+
+        .technologies-icon {
+            transform: scale(2.5);
+        }
+    }
 </style>

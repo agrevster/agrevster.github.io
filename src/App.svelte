@@ -41,4 +41,20 @@
         font-weight: 400;
         font-size: 1.0rem;
     }
+
+    @media (max-width: 500px) {
+        #description {
+           font-size: 2.3vw;
+        }
+
+        #nametag {
+            font-size: 5vw;
+        }
+
+        #portrait {
+            width: 7em;
+            height: 7em;
+            border-radius: 2.5em;
+        }
+    }
 </style>

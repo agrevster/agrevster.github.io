@@ -51,4 +51,11 @@
         animation-name: fade-on-hover;
         animation-duration: 1s;
     }
+
+
+    @media (max-width: 500px) {
+        .group-picker-option{
+            font-size: 2.5vw;
+        }
+    }
 </style>

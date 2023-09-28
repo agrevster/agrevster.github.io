@@ -36,7 +36,7 @@
 
 <div class="about-content">
     {#if tab === "about"}
-        <p>I am a college freshmen at the University of <b on:click={redirectToUniSite} role="button" tabindex={0}
+        <p id = "description">I am a college freshmen at the University of <b on:click={redirectToUniSite} role="button" tabindex={0}
                                                            on:keydown={null}><span
                 class="uni-purple bold"> Northern</span> <span class="uni-gold bold">Iowa</span></b> who enjoys
             solving computer problems and developing software.</p>
@@ -79,6 +79,7 @@
         font-size: 1vw;
         width: 25vw;
         color: var(--white_wash);
+        margin:auto;
     }
 
     .uni-purple {
@@ -96,5 +97,12 @@
     .about-skills {
         background: var(--sail_blue);
         border-radius: .4em;
+    }
+
+
+    @media (max-width: 500px) {
+       #description {
+            font-size: 2vw;
+        }
     }
 </style>

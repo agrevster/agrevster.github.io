@@ -97,4 +97,29 @@
         border-color: var(--morning_sea);
     }
 
+    @media (max-width: 500px) {
+        .skill-category-title {
+            padding-left: 1vw;
+            font-size: 2vw;
+        }
+
+        .skill-category-icon {
+            transform: scale(4);
+        }
+
+        .skill-category-expanded {
+            margin-left: 1vw;
+            transform: scale(3);
+        }
+
+        @keyframes expand-grow {
+            from {
+                transform: scale(3.5)
+            }
+            to {
+                transform: scale(3.8)
+            }
+        }
+    }
+
 </style>

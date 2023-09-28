@@ -41,4 +41,15 @@
         transform: scale(2);
         margin-right: 1em;
     }
+
+
+    @media (max-width: 500px) {
+        .skill-icon {
+            transform: scale(2.5)
+        }
+
+        .skill-title {
+            font-size: 1.2vw;
+        }
+    }
 </style>
