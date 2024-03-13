@@ -6,7 +6,7 @@
 
     let dates = data.dates
 
-    let title = data.title
+    let title = data.name
     let type = data.type
     let description = data.description
     let technologies = data.technologies

@@ -24,7 +24,7 @@
         const text = await res.json();
 
         if (res.ok) {
-            return text;
+            return text.categories;
         } else {
             throw new Error(text);
         }

@@ -4,7 +4,7 @@
 
     export let data
 
-    let title = data.title
+    let title = data.name
     let icon = data.icon
     let level = data.stars
 </script>
