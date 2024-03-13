@@ -6,7 +6,7 @@
 
     let title = data.title
     let icon = data.icon
-    let level = data.level
+    let level = data.stars
 </script>
 
 <div class = "skill-container">
