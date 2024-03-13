@@ -1,0 +1,120 @@
+module github.agrevster.portfolio.skills
+
+amends "pkl-templates/skillTemplate.pkl"
+
+categories {
+  new SkillCategory {
+    name = "jvm"
+    icon = "logos:java"
+
+    skills {
+      new Skill {
+        name = "Kotlin"
+        icon = "devicon:kotlin"
+        stars = 3
+      }
+      new Skill {
+        name = "Java"
+        icon = "devicon:java"
+        stars = 3
+      }
+      new Skill {
+        name = "Gradle"
+        icon = "vscode-icons:file-type-gradle"
+        stars = 2
+      }
+      new Skill {
+        name = "Maven"
+        icon = "devicon:maven"
+        stars = 2
+      }
+    }
+  }
+
+  new SkillCategory {
+     name = "web"
+     icon = "mdi:web"
+
+     skills {
+       new Skill {
+        name = "HTML"
+        icon = "vscode-icons:file-type-html"
+        stars = 2
+      }
+       new Skill {
+         name = "CSS"
+         icon = "vscode-icons:file-type-css"
+         stars = 2
+       }
+       new Skill {
+         name = "Javascript"
+         icon = "logos:javascript"
+         stars = 2
+       }
+       new Skill {
+         name = "Svelte"
+         icon = "logos:svelte-icon"
+         stars = 2
+       }
+       new Skill {
+         name = "Go"
+         icon = "devicon:go"
+         stars = 1
+       }
+     }
+   }
+
+  new SkillCategory {
+    name = "python"
+    icon = "devicon:python"
+
+    skills {
+      new Skill {
+        name = "Python"
+        icon = "logos:python"
+        stars = 3
+      }
+      new Skill {
+        name = "Flask"
+        icon = "bxl:Flask"
+        stars = 2
+      }
+    }
+  }
+
+  new SkillCategory {
+    name = "Apple"
+    icon = "mingcute:apple-line"
+
+    skills {
+      new Skill {
+        name = "Swift"
+        icon = "devicon:swift"
+        stars = 1
+      }
+      new Skill {
+        name = "Swift Ui"
+        icon = "iconoir:apple-swift"
+        stars = 2
+      }
+    }
+  }
+
+ new SkillCategory {
+   name = "MISC"
+   icon = "ph:code-fill"
+
+   skills {
+     new Skill {
+       name = "Docker"
+       icon = "logos:docker-icon"
+       stars = 1
+     }
+     new Skill {
+       name = "Vim"
+       icon = "logos:vim"
+       stars = 2
+     }
+   }
+ }
+}

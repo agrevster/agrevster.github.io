@@ -1,0 +1,23 @@
+@ModuleInfo { minPklVersion = "0.25.1" }
+module github.agrevster.portfolio.skillTemplate
+
+typealias Icon = String(!isEmpty)
+
+class Skill {
+  name: String(!isEmpty)
+
+  icon: Icon
+
+  stars: Int(isBetween(0,3))
+}
+
+class SkillCategory {
+  name: String(!isEmpty)
+
+  icon: Icon
+
+  skills: Listing<Skill>(!isEmpty)
+}
+
+
+categories: Listing<SkillCategory>(!isEmpty)
