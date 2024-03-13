@@ -1,0 +1,13 @@
+#!/bin/bash
+rm public/projects.json
+rm public/skills.json
+
+# If running on github actions or another CI
+if [[ -z "${CI}" ]]; then
+  export PKL_EXECUTABLE="pkl"
+else
+  export PKL_EXECUTABLE="${GITHUB_WORKSPACE}/jpkl"
+fi
+
+$PKL_EXECUTABLE eval projects.pkl -f json -o public/projects.json
+$PKL_EXECUTABLE eval skills.pkl -f json -o public/skills.json
