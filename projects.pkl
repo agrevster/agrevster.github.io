@@ -1,0 +1,78 @@
+module github.agrevster.portfolio.projects
+
+amends "pkl-templates/projectTemplate.pkl"
+
+projects {
+  new Project {
+    name = "Portfolio"
+    dates = "September 2023"
+    type = "project"
+    description = "A portfolio website built in svelte with a go backend. (This website)"
+
+    technologies {
+      "svelte"
+      "html"
+      "css"
+      "javascript"
+      "github-actions"
+    }
+
+    technologiesIcons {
+      "logos:svelte-icon"
+      "vscode-icons:file-type-html"
+      "vscode-icons:file-type-css"
+      "logos:javascript"
+      "skill-icons:githubactions-dark"
+    }
+
+  }
+
+  new Project {
+    name = "pocketbase-kotlin"
+    dates = "August 2023"
+    type = "project"
+    description = "A multiplatform Kotlin SDK for Pocketbase."
+
+    technologies {
+      "kotlin"
+      "ktor"
+      "gradle"
+      "github-actions"
+      "Pkl"
+    }
+
+    technologiesIcons {
+      "devicon:kotlin"
+      "devicon:ktor"
+      "vscode-icons:file-type-gradle"
+      "skill-icons:githubactions-dark"
+      "skill-icons:pkl-dark"
+    }
+
+    link = "https://github.com/agrevster/pocketbase-kotlin"
+  }
+
+  new Project {
+    name = "Timekeeper"
+    dates = "May 2023"
+    type = "job"
+    description = "A employee timecard program for Mac and ipad. Written in Swift with a Kotlin backend."
+
+    technologies {
+      "kotlin"
+      "swift"
+      "gradle"
+      "sqlite"
+    }
+
+    technologiesIcons {
+      "devicon:kotlin"
+      "logos:swift"
+      "vscode-icons:file-type-gradle"
+      "simple-icons:sqlite"
+    }
+
+    link = "https://clargold.org/en-US/technology-f202db6f"
+  }
+
+}

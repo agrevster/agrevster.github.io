@@ -1,0 +1,26 @@
+@ModuleInfo { minPklVersion = "0.25.1" }
+module github.agrevster.portfolio.skillTemplate
+
+typealias ProjectType = "project" | "job" | "freelance" | "other"
+
+typealias Technology = String(!isBlank)
+
+typealias Icon = String(!isBlank)
+
+class Project {
+  name: String(!isEmpty)
+
+  dates: String(!isEmpty)
+
+  type: ProjectType
+
+  description: String(length <= 90)
+
+  technologies: Listing<Technology>
+
+  technologiesIcons: Listing<Icon>
+
+  link: Uri?
+}
+
+projects: Listing<Project>
