@@ -76,7 +76,7 @@ categories {
       }
       new Skill {
         name = "Flask"
-        icon = "bxl:Flask"
+        icon = "bxl:flask"
         stars = 2
       }
     }
