@@ -37,16 +37,16 @@ projects {
       "kotlin"
       "ktor"
       "gradle"
-      "github-actions"
       "Pkl"
+      "github-actions"
     }
 
     technologiesIcons {
       "devicon:kotlin"
       "devicon:ktor"
       "vscode-icons:file-type-gradle"
-      "skill-icons:githubactions-dark"
       "skill-icons:pkl-dark"
+      "skill-icons:githubactions-dark"
     }
 
     link = "https://github.com/agrevster/pocketbase-kotlin"
