@@ -14,6 +14,7 @@ projects {
       "html"
       "css"
       "javascript"
+      "Pkl"
       "github-actions"
     }
 
@@ -22,6 +23,7 @@ projects {
       "vscode-icons:file-type-html"
       "vscode-icons:file-type-css"
       "logos:javascript"
+      "skill-icons:pkl-dark"
       "skill-icons:githubactions-dark"
     }
 
@@ -37,7 +39,6 @@ projects {
       "kotlin"
       "ktor"
       "gradle"
-      "Pkl"
       "github-actions"
     }
 
@@ -45,7 +46,6 @@ projects {
       "devicon:kotlin"
       "devicon:ktor"
       "vscode-icons:file-type-gradle"
-      "skill-icons:pkl-dark"
       "skill-icons:githubactions-dark"
     }
 
