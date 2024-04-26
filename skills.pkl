@@ -5,7 +5,7 @@ amends "pkl-templates/skillTemplate.pkl"
 categories {
   new SkillCategory {
     name = "jvm"
-    icon = "logos:java"
+    icon = "devicon-plain:java"
 
     skills {
       new Skill {
@@ -15,7 +15,7 @@ categories {
       }
       new Skill {
         name = "Java"
-        icon = "devicon:java"
+        icon = "logos:java"
         stars = 3
       }
       new Skill {
@@ -66,7 +66,7 @@ categories {
 
   new SkillCategory {
     name = "python"
-    icon = "devicon:python"
+    icon = "devicon-plain:python"
 
     skills {
       new Skill {
