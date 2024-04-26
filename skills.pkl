@@ -117,4 +117,22 @@ categories {
      }
    }
  }
+
+  new SkillCategory {
+    name = "systems"
+    icon = "file-icons:assembly-generic"
+
+    skills {
+      new Skill {
+        name = "C"
+        icon = "skill-icons:c"
+        stars = 1
+      }
+      new Skill {
+        name = "C++"
+        icon = "skill-icons:cpp"
+        stars = 1
+      }
+    }
+  }
 }
