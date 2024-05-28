@@ -1,0 +1,52 @@
+name: deploy-site
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # To push a branch
+      pull-requests: write  # To create a PR from that branch
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Use Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '21'
+      - name: Use NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+
+      - name: Use Pkl
+        run: |
+          curl -L -o jpkl https://repo1.maven.org/maven2/org/pkl-lang/pkl-cli-java/0.25.2/pkl-cli-java-0.25.2.jar
+          chmod +x jpkl
+          ./jpkl --version
+
+      - name: Setup Node dependencies
+        run: npm i
+
+      - name: Render pkl
+        run: bash pkl-templates/create-about-me
+
+      - name: Deploy GitHub Pages
+        run: |
+          npm run build 
+          git worktree add gh-pages
+          git config user.name "Deploy from CI"
+          git config user.email ""
+          cd gh-pages
+          git update-ref -d refs/heads/gh-pages
+          rm -rf *
+          mv ../dist/* .
+          git add .
+          git commit -m "Deploy $GITHUB_SHA to gh-pages"
+          git push --force --set-upstream origin gh-pages

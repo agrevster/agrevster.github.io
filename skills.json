@@ -1,0 +1,125 @@
+{
+  "categories": [
+    {
+      "name": "jvm",
+      "icon": "devicon-plain:java",
+      "skills": [
+        {
+          "name": "Kotlin",
+          "icon": "devicon:kotlin",
+          "stars": 3
+        },
+        {
+          "name": "Java",
+          "icon": "logos:java",
+          "stars": 3
+        },
+        {
+          "name": "Gradle",
+          "icon": "vscode-icons:file-type-gradle",
+          "stars": 2
+        },
+        {
+          "name": "Maven",
+          "icon": "devicon:maven",
+          "stars": 2
+        }
+      ]
+    },
+    {
+      "name": "web",
+      "icon": "mdi:web",
+      "skills": [
+        {
+          "name": "HTML",
+          "icon": "vscode-icons:file-type-html",
+          "stars": 2
+        },
+        {
+          "name": "CSS",
+          "icon": "vscode-icons:file-type-css",
+          "stars": 2
+        },
+        {
+          "name": "Javascript",
+          "icon": "logos:javascript",
+          "stars": 2
+        },
+        {
+          "name": "Svelte",
+          "icon": "logos:svelte-icon",
+          "stars": 2
+        },
+        {
+          "name": "Go",
+          "icon": "devicon:go",
+          "stars": 1
+        }
+      ]
+    },
+    {
+      "name": "python",
+      "icon": "devicon-plain:python",
+      "skills": [
+        {
+          "name": "Python",
+          "icon": "logos:python",
+          "stars": 3
+        },
+        {
+          "name": "Flask",
+          "icon": "bxl:flask",
+          "stars": 2
+        }
+      ]
+    },
+    {
+      "name": "Apple",
+      "icon": "mingcute:apple-line",
+      "skills": [
+        {
+          "name": "Swift",
+          "icon": "devicon:swift",
+          "stars": 1
+        },
+        {
+          "name": "Swift Ui",
+          "icon": "iconoir:apple-swift",
+          "stars": 2
+        }
+      ]
+    },
+    {
+      "name": "MISC",
+      "icon": "ph:code-fill",
+      "skills": [
+        {
+          "name": "Docker",
+          "icon": "logos:docker-icon",
+          "stars": 1
+        },
+        {
+          "name": "Vim",
+          "icon": "logos:vim",
+          "stars": 2
+        }
+      ]
+    },
+    {
+      "name": "systems",
+      "icon": "file-icons:assembly-generic",
+      "skills": [
+        {
+          "name": "C",
+          "icon": "skill-icons:c",
+          "stars": 1
+        },
+        {
+          "name": "C++",
+          "icon": "skill-icons:cpp",
+          "stars": 1
+        }
+      ]
+    }
+  ]
+}

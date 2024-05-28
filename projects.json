@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "name": "Portfolio",
+      "dates": "September 2023",
+      "type": "project",
+      "description": "A portfolio website built in svelte (This website)",
+      "technologies": [
+        "svelte",
+        "javascript",
+        "Pkl",
+        "github-actions"
+      ],
+      "technologiesIcons": [
+        "logos:svelte-icon",
+        "logos:javascript",
+        "skill-icons:pkl-dark",
+        "skill-icons:githubactions-dark"
+      ]
+    },
+    {
+      "name": "pocketbase-kotlin",
+      "dates": "August 2023",
+      "type": "project",
+      "description": "A multiplatform Kotlin SDK for Pocketbase.",
+      "technologies": [
+        "kotlin",
+        "ktor",
+        "gradle",
+        "github-actions"
+      ],
+      "technologiesIcons": [
+        "devicon:kotlin",
+        "devicon:ktor",
+        "vscode-icons:file-type-gradle",
+        "skill-icons:githubactions-dark"
+      ],
+      "link": "https://github.com/agrevster/pocketbase-kotlin"
+    },
+    {
+      "name": "Timekeeper",
+      "dates": "May 2023",
+      "type": "job",
+      "description": "A employee timecard program for Mac and ipad. Written in Swift with a Kotlin backend.",
+      "technologies": [
+        "kotlin",
+        "swift",
+        "gradle",
+        "sqlite"
+      ],
+      "technologiesIcons": [
+        "devicon:kotlin",
+        "logos:swift",
+        "vscode-icons:file-type-gradle",
+        "simple-icons:sqlite"
+      ],
+      "link": "https://clargold.org/en-US/technology-f202db6f"
+    }
+  ]
+}
