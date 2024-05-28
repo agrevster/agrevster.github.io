@@ -7,7 +7,7 @@ projects {
     name = "Portfolio"
     dates = "September 2023"
     type = "project"
-    description = "A portfolio website built in svelte with a go backend. (This website)"
+    description = "A portfolio website built in svelte (This website)"
 
     technologies {
       "svelte"
