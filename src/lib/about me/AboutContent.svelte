@@ -36,7 +36,7 @@
 
 <div class="about-content">
     {#if tab === "about"}
-        <p id = "description">I am a college freshmen at the University of <b on:click={redirectToUniSite} role="button" tabindex={0}
+        <p id = "description">I am a sophomore at the University of <b on:click={redirectToUniSite} role="button" tabindex={0}
                                                            on:keydown={null}><span
                 class="uni-purple bold"> Northern</span> <span class="uni-gold bold">Iowa</span></b> who enjoys
             solving computer problems and developing software.</p>

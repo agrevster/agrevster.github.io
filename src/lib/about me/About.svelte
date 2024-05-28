@@ -26,7 +26,7 @@
     </div>
 
 </div>
-
+<br>
 <style>
     #about-me-options {
         margin-bottom: 0em;
