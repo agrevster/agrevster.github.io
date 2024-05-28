@@ -11,8 +11,6 @@ projects {
 
     technologies {
       "svelte"
-      "html"
-      "css"
       "javascript"
       "Pkl"
       "github-actions"
@@ -20,8 +18,6 @@ projects {
 
     technologiesIcons {
       "logos:svelte-icon"
-      "vscode-icons:file-type-html"
-      "vscode-icons:file-type-css"
       "logos:javascript"
       "skill-icons:pkl-dark"
       "skill-icons:githubactions-dark"
