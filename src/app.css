@@ -1,9 +1,9 @@
 :root {
-    --white_wash: #f1faee;
-    --lighthouse_red: #e63946;
+    --white_wash: #faf3ee;
+    --lighthouse_red: rgba(230, 57, 70, 0.93);
     --morning_sea: #A8DADC;
-    --deep_ocean: #457B9D;
-    --stormy_night: #0e1b2a;
+    --deep_ocean: #4c81a4;
+    --stormy_night: #152b42;
     --sail_blue: #1d3557;
 
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
